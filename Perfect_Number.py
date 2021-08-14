@@ -15,7 +15,7 @@ while True:
     for i in range(1, var_num):
         if var_num % i == 0:
             lst.append(i)
-    for i in liste:
+    for i in lst:
         tot = (i + tot)
     if tot == var_num:
         print("Bingo!! you've selected a perfect number")
