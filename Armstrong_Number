@@ -1,0 +1,34 @@
+print("""
+*******************************************
+Detection of Armstrong Number
+
+Please press 'q' for exit from the program
+*******************************************
+""")
+while True:
+        cnum = input("Please enter: ") #Canditate Armstrong input
+    if cnum == "q":
+        print("Bye Bye....")
+        break
+    csum = 0 #We need to define the sum variable at 0 at the beginning, later we'll use this variable in for loop.
+
+    breaknum = [int(a) for a in str(cnum)] #We break the number into pieces as a "string" then convert all list elements to "integer" by using the list comprehension method
+    for i in parcala:  #Please see following link about [Armstrong Number](https://www.quora.com/What-is-an-Armstrong-number)
+        toplam += i ** len(parcala) 
+    if int(sayi) == int(toplam):
+        print("It is an Armstrong number.")
+    else:
+        print("It isn't an Armstrong number.")
+
+"""
+What list comprehension do with two for loop;
+cnum = input("Please enter:")
+csum= []
+for a in str(cnum):
+    csum.append(a)
+    new_csum =[]
+    for a in csum:
+        new_csum.append(int(a))
+   csum = new_csum
+print(csum)
+"""
