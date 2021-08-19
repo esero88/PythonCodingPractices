@@ -12,3 +12,4 @@ Small code blocks from my learning process
 - TV_interface: It is an object-oriented programing example.
 - BMI: It determines what kind of body type that you have.
 - Number_Guessing: It is a number guessing game.
+- Computer_Guessing: This time computer guessing user's number
