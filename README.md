@@ -11,3 +11,4 @@ Small code blocks from my learning process
 - Pythagorean_Theorem: Two seperate code block has been added one of them for [Hypotenuse](https://en.wikipedia.org/wiki/Hypotenuse) other for [Special Right Triangles](https://en.wikipedia.org/wiki/Special_right_triangle)
 - TV_interface: It is an object-oriented programing example.
 - BMI: It determines what kind of body type that you have.
+- Number_Guessing: It is a number guessing game.
