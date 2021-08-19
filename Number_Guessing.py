@@ -2,39 +2,37 @@ import random
 import time
 
 print(""""
-************************************
+********************
 Number Guessing Game
-
-Guess a number between 1 and 40
-
-************************************
+********************
 """)
 
-random_number = random.randint(1,40)
-number_of_guesses = 7
-while True:
-    guess = int(input("Your guess:"))
-    if guess < random_number:
-        print("Please wait...")
-        time.sleep(1)
+def guess(x,y):
+    random_number = random.randint(x,y)
+    guess = 0
+    number_of_guesses = 7
+    while guess != random_number:
+        guess = int(input(f"Guess a number between {x} and {y}: "))
+        if guess < random_number:
+            print("Checking your number...")
+            time.sleep(1)
+            print("Sorry, guess again. Your number is too low")
+            number_of_guesses -= 1
+        elif guess > random_number:
+            print("Checking your number...")
+            time.sleep(1)
+            print("Sorry, guess again. Your number is too high")
+            number_of_guesses -= 1
+        else:
+            print("Checking your number...")
+            time.sleep(1)
+            print(f"Bingo, Congratulations. You have guessed the number {random_number}")
+            break
+        if number_of_guesses == 0:
+            print(f"You used all your guesses...The number was{random_number}")
+            break
 
-        print("Please guess a higher number")
 
-        number_of_guesses -= 1
-    elif guess > random_number:
-        print("Please wait...")
-        time.sleep(1)
-
-        print("Please guess a lower number")
-
-        number_of_guesses -= 1
-    else:
-        print("Please wait...")
-        time.sleep(1)
-
-        print("Congratulations, Number:",random_number)
-        break
-    if number_of_guesses == 0:
-        print("You used all your guesses...")
-        print("Number:",random_number)
-        break
+x = int(input("Specifiy your lower boundry: "))
+y = int(input("Specifiy your upper boundry: "))
+guess(x,y)
