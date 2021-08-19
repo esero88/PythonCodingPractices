@@ -1,0 +1,26 @@
+import random
+print(""""
+*****************************
+Computer Number Guessing Game
+*****************************
+""")
+def computer_guess(x):
+    low = 1
+    high = int(x)
+    feedback = " "
+    while feedback != "c":
+        if low != high:
+            guess = random.randint(low,high)
+        else:
+            guess = low #doesn't matter low = high
+        feedback = input(f"Is {guess} too high (H), too low (L) or correct (C)?? ").lower()
+        if feedback == "h":
+            high = guess - 1 #adjust upperbound
+        elif feedback == "l":
+            low = guess +1 #adjust lowerbound
+        else:
+            print(f"Bingo, Congratulations. The computer guessed the number {guess}, correctly")
+            break
+
+x = int(input("Specifiy upper boundry: "))
+computer_guess(x)
