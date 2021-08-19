@@ -31,5 +31,6 @@ def guess(x,y):
         if number_of_guesses == 0:
             print(f"You used all your guesses...The number was{random_number}")
             break
-
+x = int(input("Specifiy your lower boundry: "))
+y = int(input("Specifiy your upper boundry: "))
 guess(x,y)
