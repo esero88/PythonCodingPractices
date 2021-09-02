@@ -15,3 +15,4 @@ Small code blocks from my learning process
 - Computer_Guessing: This time computer guessing user's number
 - RockPaperScissors: It's a classical game
 - Gasoline_Price: It calculates how much money should you spend according to your car's unit price of gasoline
+- Factorial: Factorial calculation code block
