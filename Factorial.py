@@ -19,4 +19,4 @@ while True:
 
         for i in range(2,number+1):
             factorial *= i
-        print("Faktoriyel:",factorial)
+        print("Factoriyel:",factorial)
