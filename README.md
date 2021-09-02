@@ -16,3 +16,4 @@ Small code blocks from my learning process
 - RockPaperScissors: It's a classical game
 - Gasoline_Price: It calculates how much money should you spend according to your car's unit price of gasoline
 - Factorial: Factorial calculation code block
+- Fibonacci: Creates a fibonacci series in the desired range
