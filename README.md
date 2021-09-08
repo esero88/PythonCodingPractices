@@ -17,3 +17,4 @@ Small code blocks from my learning process
 - Gasoline_Price: It calculates how much money should you spend according to your car's unit price of gasoline
 - Factorial: Factorial calculation code block
 - Fibonacci: Creates a fibonacci series in the desired range
+- The_Multiplication_Table: It calculates all multiplications between 1 and 10.
